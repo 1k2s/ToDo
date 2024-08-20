@@ -1,0 +1,100 @@
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+
+    background: var( --gray-500);
+    border: 1px solid var( --gray-400 );
+    border-radius: 8px;
+}
+
+
+
+/* P TEXT */
+.task p {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: start;
+    margin: 0 20px;
+
+    font-size: 1.6rem;
+}
+
+
+.taskNotItalic {
+    font-family: "Inter", sans-serif;
+    color: var( --gray-100 );
+}
+
+.taskItalic {
+    text-decoration: line-through;
+    font-family: "Inter", sans-serif;
+    color: var( --gray-300 ); 
+}
+
+
+
+/* BUTTON CHECKED */
+.task button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+}
+
+.checkedButton {
+    border: 2px solid var( --purple-dark );
+    border-radius: 100%;
+
+    background: var( --purple-dark );
+    transition: background .2s;
+}
+
+.checkedButton:hover {
+    background: var( --purple );
+    cursor: pointer;
+    border: 2px solid var( --purple )
+}
+
+.uncheckedButton {
+    border: 2px solid var( --blue-dark );
+    background: var( --gray-800);
+    transition: background .2s;
+}
+
+.uncheckedButton:hover {
+    border: 2px solid var( --blue );
+    background: #4ea7de41;
+    cursor: pointer;
+}
+
+.checked{
+    display: flex;
+    color: var( --gray-100 );
+}
+
+.unchecked {
+    display:none;
+}
+
+/* TRASH */
+
+.buttonTrash{
+    border: none;
+    background: none;
+}
+
+.trash{
+    color: var( --gray-300 );
+    transition: all .2s;
+}
+
+.trash:hover {
+    color: var( --danger );
+    cursor: pointer;
+}

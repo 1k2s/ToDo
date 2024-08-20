@@ -1,0 +1,164 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 20px;
+    height: 80%;
+
+    background: var( --gray-600 );
+
+    /* border: 1px solid blue; */
+}
+
+.containerInput {
+    display: flex;
+    width: 73.6rem;
+    height: 5.4rem;
+    gap: .8rem;
+    margin-top: -27px;
+
+    /* border: 1px solid red; */
+}
+
+.containerInput input {
+    width: 63.8rem;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+
+    border-radius: 8px;
+    border: 1px solid var( --gray-400);
+    background: var( --gray-500 );
+
+    font-size: 16px;
+    color: var( --gray-300 );
+
+    /* border: 1px solid red; */
+}
+
+
+.containerInput input:focus{
+    border: 1px solid var( --purple );
+    color: var( --gray-100 );
+}
+
+.containerInput button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 8px;
+    border: none;
+    width: 9rem;
+
+    background: var( --blue-dark );
+    
+    color: var( --gray-100 );
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+
+    transition: all .2s;
+}
+
+.containerInput button:hover {
+    cursor: pointer;
+    background: var( --blue);
+}
+
+.containerTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 73.6rem;
+    height: 100%;
+
+    /* border: 1px solid pink */
+}
+
+
+
+/* HEADER TASKS */
+.containerTasks .headerTasks {
+    display: flex;
+    align-items: center;
+    width: 73.6rem;
+    background: var( --gray-600);
+    justify-content: space-between;
+    padding: 10px;
+
+    position: fixed;
+    z-index: 10000;
+}
+
+.containerTasks .headerTasks .newTasks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: var( --blue );
+}
+
+.containerTasks .headerTasks .newTasks span {
+    display: flex;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 100px;
+    background: var( --gray-400 );
+    color: var( --gray-200 );
+}
+
+.containerTasks .headerTasks .completedTasks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: var( --purple );
+}
+
+.containerTasks .headerTasks .completedTasks span {
+    display: flex;
+    max-width: 90px;
+    padding: 2px 6px;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 100px;
+    background: var( --gray-400 );
+    color: var( --gray-200 );
+}
+
+
+
+/* CONTAIN TASKS */
+.containTasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+    border-radius: 8px;
+    overflow: auto;
+    margin: 50px 0 90px 0;
+
+    /* border: 1px solid red; */
+}
+
+.containTasks img {
+    margin-top: 64px;
+    width: 56px;
+    height: 56px;
+}
+
